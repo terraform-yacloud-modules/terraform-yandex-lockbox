@@ -1,7 +1,9 @@
 output "id" {
-  value = yandex_lockbox_secret.main.id
+  description = "Lockbox secret ID"
+  value       = yandex_lockbox_secret.main.id
 }
 
 output "name" {
-  value = yandex_lockbox_secret.main.name
+  description = "Lockbox secret name"
+  value       = yandex_lockbox_secret.main.name
 }

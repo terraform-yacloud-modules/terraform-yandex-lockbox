@@ -39,19 +39,19 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_deletion_protection"></a> [deletion\_protection](#input\_deletion\_protection) | Whether the lockbox secret is protected from deletion | `bool` | `false` | no |
-| <a name="input_description"></a> [description](#input\_description) | Description of the security group | `string` | `""` | no |
+| <a name="input_description"></a> [description](#input\_description) | Lockbox secret description | `string` | `""` | no |
 | <a name="input_entries"></a> [entries](#input\_entries) | List of secret entries | `map(string)` | `{}` | no |
 | <a name="input_folder_id"></a> [folder\_id](#input\_folder\_id) | Folder ID | `string` | `null` | no |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | KMS key used to encrypt the lockbox secret | `string` | `null` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | A set of labels | `map(string)` | `{}` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name of lockbox secret | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | Lockbox secret name | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_id"></a> [id](#output\_id) | n/a |
-| <a name="output_name"></a> [name](#output\_name) | n/a |
+| <a name="output_id"></a> [id](#output\_id) | Lockbox secret ID |
+| <a name="output_name"></a> [name](#output\_name) | Lockbox secret name |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## License
