@@ -10,5 +10,5 @@ module "kms_key" {
   }
 
   deletion_protection = false
-  folder_id           = "xxx"
+#   folder_id           = "xxx"
 }
