@@ -6,7 +6,7 @@ module "testsecret" {
 
   entries = {
     "key-a" : "value-a"
-    "key-b" : file("key.pem")
+    "key-pem" : file("key.pem")
   }
 
   deletion_protection = false
