@@ -1,4 +1,4 @@
-module "kms_key" {
+module "testsecret" {
   source = "../../"
 
   name   = "testsecret"
@@ -6,9 +6,8 @@ module "kms_key" {
 
   entries = {
     "key-a" : "value-a"
-    "key-b" : "value-b"
+    "key-b" : file("key.pem")
   }
 
   deletion_protection = false
-  folder_id           = "xxx"
 }
