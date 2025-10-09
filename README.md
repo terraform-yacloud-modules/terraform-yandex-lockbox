@@ -53,6 +53,7 @@ No modules.
 |------|-------------|
 | <a name="output_id"></a> [id](#output\_id) | Lockbox secret ID |
 | <a name="output_name"></a> [name](#output\_name) | Lockbox secret name |
+| <a name="output_version_id"></a> [version\_id](#output\_version\_id) | Lockbox version id |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## License
