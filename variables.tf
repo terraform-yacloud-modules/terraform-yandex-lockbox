@@ -47,3 +47,13 @@ variable "kms_key_id" {
   type        = string
   default     = null
 }
+
+variable "timeouts" {
+  description = "Timeout settings for cluster operations"
+  type = object({
+    create = optional(string)
+    read   = optional(string)
+    delete = optional(string)
+  })
+  default = null
+}

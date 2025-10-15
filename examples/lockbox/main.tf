@@ -10,4 +10,12 @@ module "testsecret" {
   }
 
   deletion_protection = false
+
+
+  timeouts = {
+    create = "30m"
+    read   = "30m"
+    delete = "30m"
+  }
+
 }
