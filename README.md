@@ -34,6 +34,7 @@ No modules.
 |------|------|
 | [yandex_lockbox_secret.main](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/lockbox_secret) | resource |
 | [yandex_lockbox_secret_version.main](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/lockbox_secret_version) | resource |
+| [yandex_client_config.client](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/data-sources/client_config) | data source |
 
 ## Inputs
 
@@ -42,10 +43,13 @@ No modules.
 | <a name="input_deletion_protection"></a> [deletion\_protection](#input\_deletion\_protection) | Whether the lockbox secret is protected from deletion | `bool` | `false` | no |
 | <a name="input_description"></a> [description](#input\_description) | Lockbox secret description | `string` | `""` | no |
 | <a name="input_entries"></a> [entries](#input\_entries) | List of secret entries | `map(string)` | `{}` | no |
+| <a name="input_entries_with_command"></a> [entries\_with\_command](#input\_entries\_with\_command) | List of secret entries with command generation | <pre>list(object({<br/>    key = string<br/>    command = object({<br/>      path = string<br/>      args = optional(list(string), [])<br/>      env  = optional(map(string), {})<br/>    })<br/>  }))</pre> | `[]` | no |
 | <a name="input_folder_id"></a> [folder\_id](#input\_folder\_id) | Folder ID | `string` | `null` | no |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | KMS key used to encrypt the lockbox secret | `string` | `null` | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | A set of labels | `map(string)` | `{}` | no |
 | <a name="input_name"></a> [name](#input\_name) | Lockbox secret name | `string` | n/a | yes |
+| <a name="input_password_payload_specification"></a> [password\_payload\_specification](#input\_password\_payload\_specification) | Password generation specification for lockbox secret | <pre>object({<br/>    password_key         = string<br/>    length               = optional(number, 36)<br/>    include_digits       = optional(bool, true)<br/>    include_lowercase    = optional(bool, true)<br/>    include_uppercase    = optional(bool, true)<br/>    include_punctuation  = optional(bool, true)<br/>    included_punctuation = optional(string, "")<br/>    excluded_punctuation = optional(string, "")<br/>  })</pre> | `null` | no |
+| <a name="input_timeouts"></a> [timeouts](#input\_timeouts) | Timeout settings for lockbox secret operations | <pre>object({<br/>    create = optional(string)<br/>    read   = optional(string)<br/>    update = optional(string)<br/>    delete = optional(string)<br/>  })</pre> | `null` | no |
 
 ## Outputs
 
