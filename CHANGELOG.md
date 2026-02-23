@@ -1,3 +1,8 @@
+## v1.34.0 - 2026-02-23
+### Miscellaneous
+- 72c21c9 Merge pull request [#89](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/89) from terraform-yacloud-modules/dependabot/github_actions/kvendingoldo/git-flow-action-2.16.0
+- d6ade55 build(deps): bump kvendingoldo/git-flow-action from 2.2.0 to 2.16.0
+
 ## v1.33.0
 ## v1.32.0
 ## v1.31.0
