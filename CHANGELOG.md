@@ -1,3 +1,8 @@
+## v1.35.0 - 2026-03-02
+### Miscellaneous
+- 341936d Merge pull request [#90](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/90) from terraform-yacloud-modules/dependabot/github_actions/hashicorp/setup-terraform-4
+- dd2105f build(deps): bump hashicorp/setup-terraform from 3 to 4
+
 ## v1.34.0 - 2026-02-23
 ### Miscellaneous
 - 72c21c9 Merge pull request [#89](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/89) from terraform-yacloud-modules/dependabot/github_actions/kvendingoldo/git-flow-action-2.16.0
