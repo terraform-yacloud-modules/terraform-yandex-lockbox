@@ -72,3 +72,8 @@ resource "yandex_lockbox_secret_version" "main" {
   }
 
 }
+
+data "yandex_lockbox_secret_version" "main" {
+  secret_id  = yandex_lockbox_secret.main.id
+  version_id = yandex_lockbox_secret_version.main.id
+}
