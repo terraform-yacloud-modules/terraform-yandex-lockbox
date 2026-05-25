@@ -1,3 +1,7 @@
+## v1.37.0 - 2026-05-25
+### Features
+- 89e9cb0 feat: add condition to create secret version
+
 ## v1.36.0 - 2026-05-25
 ### Bug Fixes
 - ca95ccd Fix: password_payload_specification
