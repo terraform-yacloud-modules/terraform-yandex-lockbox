@@ -1,5 +1,10 @@
 data "yandex_client_config" "client" {}
 
+moved {
+  from = yandex_lockbox_secret_version.main
+  to   = yandex_lockbox_secret_version.main[0]
+}
+
 resource "yandex_lockbox_secret" "main" {
   name        = var.name
   description = var.description
@@ -36,6 +41,8 @@ resource "yandex_lockbox_secret" "main" {
 }
 
 resource "yandex_lockbox_secret_version" "main" {
+  count = length(var.entries) > 0 ? 1 : 0
+
   secret_id   = yandex_lockbox_secret.main.id
   description = var.description
 
