@@ -96,15 +96,18 @@ variable "password_payload_specification" {
   })
   default = null
   validation {
-    condition = var.password_payload_specification == null || (
+    condition = var.password_payload_specification == null ? true : (
       var.password_payload_specification.length >= 8 &&
       var.password_payload_specification.length <= 128 &&
       can(regex("^[a-zA-Z0-9-_]+$", var.password_payload_specification.password_key)) &&
-      (var.password_payload_specification.include_digits ||
+      (
+        var.password_payload_specification.include_digits ||
         var.password_payload_specification.include_lowercase ||
         var.password_payload_specification.include_uppercase ||
-      var.password_payload_specification.include_punctuation)
+        var.password_payload_specification.include_punctuation
+      )
     )
+
     error_message = "Password specification must have length between 8-128, valid password key, and at least one character type enabled."
   }
 }
