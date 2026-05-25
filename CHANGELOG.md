@@ -1,3 +1,7 @@
+## v1.36.0 - 2026-05-25
+### Bug Fixes
+- ca95ccd Fix: password_payload_specification
+
 ## v1.35.0 - 2026-03-02
 ### Miscellaneous
 - 341936d Merge pull request [#90](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/90) from terraform-yacloud-modules/dependabot/github_actions/hashicorp/setup-terraform-4
