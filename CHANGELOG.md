@@ -1,3 +1,7 @@
+## v1.38.0 - 2026-08-31
+### Miscellaneous
+- 56bfa11 build(deps): bump actions/cache from 5.0.3 to 5.0.5 ([#92](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/92))
+
 ## v1.37.0 - 2026-05-25
 ### Features
 - 89e9cb0 feat: add condition to create secret version
