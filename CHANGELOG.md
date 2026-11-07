@@ -1,3 +1,7 @@
+## v1.39.0 - 2026-11-07
+### Miscellaneous
+- ad7981f build(deps): bump actions/checkout from 6 to 7 ([#94](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/94))
+
 ## v1.38.0 - 2026-08-31
 ### Miscellaneous
 - 56bfa11 build(deps): bump actions/cache from 5.0.3 to 5.0.5 ([#92](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/92))
