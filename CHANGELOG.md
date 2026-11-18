@@ -1,3 +1,7 @@
+## v1.41.0 - 2026-11-18
+### Miscellaneous
+- 1b6c7a8 ci: run semver job only on push to main ([#96](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/96))
+
 ## v1.40.0 - 2026-11-08
 ### Miscellaneous
 - ac29181 build(deps): bump actions/cache from 5.0.5 to 6.1.0 ([#93](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/93))
