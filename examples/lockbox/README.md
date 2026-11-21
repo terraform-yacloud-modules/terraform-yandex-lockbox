@@ -1,5 +1,11 @@
 # Yandex Cloud Lockbox Terraform module
 
+This example creates a secret with text entries and command-generated entries.
+It does not set `password_payload_specification`: the provider ignores payload
+entries for secrets with a payload specification. See
+[`examples/password-payload-specification`](../password-payload-specification)
+for a generated-password secret.
+
 ## Usage
 
 To run this example you need to execute:
