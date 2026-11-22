@@ -1,3 +1,7 @@
+## v1.42.0 - 2026-11-22
+### Bug Fixes
+- 8af7d48 fix: create secret version for password and command-only payloads ([#95](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/95))
+
 ## v1.41.0 - 2026-11-18
 ### Miscellaneous
 - 1b6c7a8 ci: run semver job only on push to main ([#96](https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox/pull/96))
